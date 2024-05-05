@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PC1_MartinezG</string>
+    <string name="title_principal">Calculadora de Notas</string>
+    <string name="et_Parcial">Nota Examen Parcial</string>
+    <string name="et_Final"> Nota Examen Final</string>
+    <string name="et_PEP">Nota PEP</string>
+    <string name="btn_calc">Calcular</string>
+
+    <string name="tv_title_result">Resultado</string>
+    <string name="tv_mensaje">La nota final es: </string>
+    <string name="tv_resultado">Resultado</string>
+</resources>
