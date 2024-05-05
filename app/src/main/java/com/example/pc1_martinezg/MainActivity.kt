@@ -28,11 +28,11 @@ class MainActivity : AppCompatActivity() {
         val notaParcial_String = etParcial.text.toString()
         val notaPep_String = etPEP.text.toString()
 
-        val notaFinal = notaFinal_String.toDoubleOrNull() ?: 0.0
-        val notaParcial = notaParcial_String.toDoubleOrNull() ?: 0.0
-        val notaPep = notaPep_String.toDoubleOrNull() ?: 0.0
+        val notaFinal = notaFinal_String.toDouble()
+        val notaParcial = notaParcial_String.toDouble()
+        val notaPep = notaPep_String.toDouble()
 
-        val promedio = (notaFinal + notaParcial + notaPep) / 3
+        val promedio = (notaFinal * 0.2  + notaParcial * 0.2 + notaPep * 0.6)
 
         val promedioString = promedio.toString()
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     public fun enviar_resultado(prom: String){
         val intent = Intent(this, ResultActivity::class.java)
-        intent.putExtra("param",prom)
+        intent.putExtra("param", prom)
         startActivity(intent)
     }
 }
